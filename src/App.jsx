@@ -5,9 +5,13 @@ import Profile from './Pages/Profile'
 import About from './Pages/About'
 import SignIn from './Pages/SignIn'
 import SignUp from './Pages/SignUp'
+import Header from './Component/Header'
+
+
  export default function App() {
    return (
      <BrowserRouter>
+     <Header></Header>
      <Routes>
       <Route path='/' element={ <Home/>}/>
       <Route path='/profile' element={ <Profile/>}/>
